@@ -1,27 +1,33 @@
 # Octosplit
 
 **Octosplit** is an lightweight Chrome extension that provides side by side diffs in GitHub.
+## How to install for dev
 
-## How to use
+* Fork / Clone the project
+* Open Tools > Extensions menu in Chrome
+* Enable _developer mode_
+* Click on _load the unpacked extension_
+* Select the path to your local copy of **Octosplit**
 
-* Install the Octosplit [Chrome extension](https://chrome.google.com/webstore/detail/mnkacicafjlllhcedhhphhpapmdgjfbb)
-* Just go on a diffs page on GitHub and check the new option : ![](http://imageshack.us/a/img833/9178/octosplitbutton.png)
+## Hacking
+After installed you can easily edit Octosplit with any improvements you can think of.
+
+To reload your changes:
+* Open Tools > Extensions menu in Chrome
+* Click Reload, any tabs using Octosplit should automatically reload. 
+
 
 ## What is changed
 
 * Original file is in the left pane with deletions,
 * New file is in the right pane with additions,
 * The global size of working area is increased (relative to window size).
+* Default view is vertical diffs, there's a checkbox for traditional horizontal diffs.
 
-[![](http://imageshack.us/a/img62/3179/octosplit.png "Side by side diffs")](http://imageshack.us/a/img689/3179/octosplit.png "Side by side diffs")
+## Quirks / Warning
+* The ~50/50 view on diffs has some issues. To keep the width there's a per-line horizontal scroll. 
+  This is mostly a side-effect of the structure of the page, in the future I'll try to improve this.
 
-## How to install for dev
-
-* Fork the project
-* Open Tools > Extensions menu in Chrome
-* Enable _developer mode_
-* Click on _load the unpacked extension_
-* Select the path to your local copy of **Octosplit**
 
 ## Warning
 
