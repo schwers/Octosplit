@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  enlarge();
+  splitDiffs();
   addCheckbox();
   manageNewComment();
   manageTabs();
@@ -6,12 +8,12 @@ $(document).ready(function() {
 
 function addCheckbox() {
   var $checkbox = $('<input type="checkbox" id="octosplit" />');
-  var $label    = $('<label id="octosplit-label" for="octosplit"><span class="mini-icon mini-icon-public-mirror"></span>Use <strong>side by side</strong> view</label>');
+  var $label    = $('<label id="octosplit-label" for="octosplit"><span class="mini-icon mini-icon-public-mirror"></span>Use <strong>horizontal</strong> view</label>');
 
   $('#toc .explain').append($label, $checkbox);
 
   $checkbox.on('click', function(event) {
-    if ($(this).is(':checked')) {
+    if (!$(this).is(':checked')) {
       enlarge();
       splitDiffs();
     } else {

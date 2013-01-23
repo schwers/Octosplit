@@ -1,5 +1,18 @@
 .container.large {
-  width: 95%;
+  width: 80%;
+}
+
+.container.large #files .diff-table {
+  table-layout: fixed;
+}
+
+.container.large .#files diff-table .line_numbers {
+  width: 3%;
+}
+
+.container.large #files .diff-table .diff-line {
+  width: 47%;
+  overflow-x: scroll;
 }
 
 #octosplit {
